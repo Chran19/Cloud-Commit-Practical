@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18.20.5
+      nodejs: 18
 
     commands:
       - npm install
@@ -17,9 +17,6 @@ phases:
 
 artifacts:
   # include all files required to run the application
+  base-directory: dist
   files:
-    - dist/**/*
-    #- src/**/*
-    #- package.json
-    #- appspec.yml
-    #- scripts/**/*
+    - "**/*"
