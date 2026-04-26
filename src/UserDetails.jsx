@@ -8,8 +8,6 @@ const UserDetails = () => {
 
     const fetchUserDetails = async () => {
         try {
-            //add your URL of API Gateway of GetUser Lambda function
-            //const response = await axios.get(`https://c1uznhy4u2.execute-api.ap-south-1.amazonaws.com/dev/getUser?userid=${userId}`); 
             const response = await axios.get(`https://9yoywh6519.execute-api.us-east-1.amazonaws.com/dev/getuser/?username=${userId}`); 
             
             if (response.data.user) {

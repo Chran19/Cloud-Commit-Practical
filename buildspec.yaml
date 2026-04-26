@@ -10,6 +10,8 @@ phases:
        
   build:
     commands:
+        # run tests/linting
+        - npm run lint
         # run build script
         - npm run build
      
